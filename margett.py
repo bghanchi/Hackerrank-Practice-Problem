@@ -1,0 +1,11 @@
+s=input()
+a=int(input())
+n=len(s)
+i1=int(n/a)
+j=0
+i=i1
+while i<=len(s):
+    st=s[j:i]
+    print(''.join(sorted(set(st), key=st.index)))
+    j=i
+    i=i+int(n/a)

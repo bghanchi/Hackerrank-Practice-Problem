@@ -1,0 +1,5 @@
+n=input()
+a = input()    
+lis = a.split()
+t = tuple(map(int, lis))
+print(hash(t))
